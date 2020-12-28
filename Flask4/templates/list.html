@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>직원목록</title>
+</head>
+<body>
+	<h3>직원목록</h3>
+
+	<table border="1">
+		<tr>
+			<th>아이디</th>
+			<th>이름</th>
+			<th>휴대폰</th>
+			<th>직급</th>
+			<th>부서</th>
+			<th>등록일</th>
+			<th>관리</th>
+		</tr>
+
+		{% for member in members %}
+		<tr>
+			<td>{{member.uid}}</td>
+			<td>{{member.name}}</td>
+			<td>{{member.hp}}</td>
+			<td>{{member.pos}}</td>
+			<td>{{member.dep}}</td>
+			<td>{{member.rdate}}</td>
+			<td>
+				<a href="#">수정</a>
+				<a href="#">삭제</a>
+			</td>
+		</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>

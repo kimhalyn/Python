@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+
+
+    <h3>{{tit}}</h3>
+
+    <h3>조건문</h3>
+
+    {% if num > 10 %}
+        <h4>num은 10보다 크다.</h4>
+    {% else %}
+        <h4>num은 10보다 작다.</h4>
+    {% endif %}
+
+    <h3>반복문</h3>
+
+    <ul>
+        {% for city in cities %}
+            <li>{{city}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
